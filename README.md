@@ -2,7 +2,7 @@
 Implements the classical DTW algorithm in PyTorch, enabling multi-pattern matching and GPU acceleration.
 
 To run the DTW module on a GPU, you can use the code below:
-```
+```python
 from pytorch_dtw import DTW
 
 if torch.cuda.is_available():
@@ -19,7 +19,7 @@ to perform matching for, k is the number of patterns to match against, and m is 
 being matched against (n and m can be different).
 
 For example:
-```
+```python
 key = np.random.rand(1, 50)
 patterns = np.random.rand(10, 75)
 
