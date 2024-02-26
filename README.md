@@ -23,8 +23,8 @@ For example:
 key = np.random.rand(1, 50)
 patterns = np.random.rand(10, 75)
 
-key_tensor = torch.Tensor(key).to(device)
-patterns_tensor = torch.Tensor(patterns).to(device)
+key_tensor = torch.tensor(key).to(device)
+patterns_tensor = torch.tensor(patterns).to(device)
 
 costs = dtw(key, patterns)
 ```

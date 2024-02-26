@@ -74,7 +74,7 @@ class DTW(nn.Module):
             mask_dim1, mask_dim2 = x_len, y_len
 
         masks = gen_mask_seq(mask_dim1, mask_dim2)
-        masks = torch.Tensor(masks).to(self.device)
+        masks = torch.tensor(masks).to(self.device)
 
         inf_masks = masks.clone()
         inf_masks[inf_masks==1] = torch.inf
