@@ -1,4 +1,5 @@
 # PyTorchDTW
+<<<<<<< HEAD
 Implements the classical DTW algorithm in PyTorch, enabling multi-pattern matching and GPU acceleration
 
 To run the DTW module on a GPU, you can use the code below:
@@ -28,3 +29,6 @@ patterns_tensor = torch.Tensor(patterns).to(device)
 
 costs = dtw(key, patterns)
 `
+=======
+Implements the classical DTW algorithm in PyTorch, enabling multi-pattern matching and GPU acceleration.
+>>>>>>> 0ab5fd4af689adffeb9b6d2e13548f19f7cd6b77
